@@ -1,5 +1,10 @@
 ﻿create PROCEDURE [dbo].[spNewUser_Insert]
-	
+
+/*This stored proceedure takes the user information 
+create user page and then stores it into the user
+table
+*/	
+
     @FirstName      VARCHAR(50), 
     @LastName       VARCHAR(50), 
     @Email          VARCHAR(50), 
