@@ -2,6 +2,7 @@
 
     @UserName       VARCHAR(50)
 	
+	
 AS
 BEGIN
 select count(*) from [User]
