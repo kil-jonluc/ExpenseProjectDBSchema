@@ -7,5 +7,7 @@
     [UserName] VARCHAR(50) NULL, 
     [Password] VARCHAR(50) NULL, 
     [PhoneNumber] VARCHAR(50) NULL, 
-    [SSN] VARCHAR(50) NULL
+    [SSN] VARCHAR(50) NULL, 
+    [RoleId] INT NULL, 
+    CONSTRAINT [FK_User_UserRoles] FOREIGN KEY ([RoleId]) REFERENCES [UserRoles]([Id])
 )
