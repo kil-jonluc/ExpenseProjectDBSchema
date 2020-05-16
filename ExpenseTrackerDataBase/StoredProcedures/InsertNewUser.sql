@@ -11,13 +11,14 @@ table
     @UserName       VARCHAR(50) = " ", 
     @Password       VARCHAR(50) = " ", 
     @PhoneNumber    VARCHAR(50) = " ", 
-    @SSN            VARCHAR(50) = " "
+    @SSN            VARCHAR(50) = " ",
+    @RoleId         INT
 
 AS
 
 BEGIN
 
-	INSERT into "User" (FirstName, LastName, Email, UserName, Password, PhoneNumber, SSN)
-    values  (@FirstName, @LastName, @Email, @UserName, @Password, @PhoneNumber, @SSN )
+	INSERT into "User" (FirstName, LastName, Email, UserName, Password, PhoneNumber, SSN, RoleId)
+    values  (@FirstName, @LastName, @Email, @UserName, @Password, @PhoneNumber, @SSN, @RoleId )
 
 END
