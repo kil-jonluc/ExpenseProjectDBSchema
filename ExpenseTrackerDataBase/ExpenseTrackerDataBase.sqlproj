@@ -60,6 +60,7 @@
     <Folder Include="PublishLocations" />
     <Folder Include="dbo" />
     <Folder Include="StoredProcedures" />
+    <Folder Include="StoredProcedures\Employer" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\User.sql" />
@@ -68,11 +69,17 @@
     <Build Include="StoredProcedures\Retrieve_User.sql" />
     <Build Include="StoredProcedures\Procedure1_1.sql" />
     <Build Include="StoredProcedures\CheckingUsername.sql" />
+    <Build Include="Tables\Employer.sql" />
+    <Build Include="StoredProcedures\Employer\Employer_Delete.sql" />
+    <Build Include="StoredProcedures\Employer\Employer_GetById.sql" />
+    <Build Include="StoredProcedures\Employer\Employer_Insert.sql" />
+    <Build Include="StoredProcedures\Employer\Employer_Update.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ExpenseTrackerDataBase.refactorlog" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\LocalExpenseTrackerDataBase.publish.xml" />
+    <None Include="local_ExpenseTrackerDataBase.publish.xml" />
   </ItemGroup>
 </Project>
