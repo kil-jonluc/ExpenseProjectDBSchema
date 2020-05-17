@@ -8,6 +8,8 @@
     [Password] VARCHAR(50) NULL, 
     [PhoneNumber] VARCHAR(50) NULL, 
     [SSN] VARCHAR(50) NULL, 
-    [RoleId] INT NULL, 
-    CONSTRAINT [FK_User_UserRoles] FOREIGN KEY ([RoleId]) REFERENCES [UserRoles]([Id])
+    [RoleId] INT NULL DEFAULT 1, 
+    [EmployerId] INT NOT NULL DEFAULT 1, 
+    CONSTRAINT [FK_User_UserRoles] FOREIGN KEY ([RoleId]) REFERENCES [UserRoles]([Id]), 
+    CONSTRAINT [FK_User_Employer] FOREIGN KEY ([EmployerId]) REFERENCES [Employer]([Id])
 )
