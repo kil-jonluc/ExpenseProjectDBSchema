@@ -62,6 +62,7 @@
     <Folder Include="StoredProcedures" />
     <Folder Include="StoredProcedures\Employer" />
     <Folder Include="PostDeployment" />
+    <Folder Include="StoredProcedures\Expense" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\User.sql" />
@@ -77,6 +78,12 @@
     <Build Include="StoredProcedures\Employer\Employer_Update.sql" />
     <Build Include="Tables\UserRoles.sql" />
     <Build Include="StoredProcedures\User_GetById.sql" />
+    <Build Include="Tables\Expense.sql" />
+    <Build Include="StoredProcedures\Expense\Expense_GetById.sql" />
+    <Build Include="StoredProcedures\Expense\Expense_Insert.sql" />
+    <Build Include="StoredProcedures\Expense\Expense_Update.sql" />
+    <Build Include="StoredProcedures\Expense\Expense_Delete.sql" />
+    <Build Include="StoredProcedures\Expense\Expense_GetAllByEmployerId.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ExpenseTrackerDataBase.refactorlog" />
