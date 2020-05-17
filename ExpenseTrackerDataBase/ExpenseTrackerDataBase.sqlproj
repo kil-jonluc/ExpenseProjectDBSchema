@@ -63,27 +63,27 @@
     <Folder Include="StoredProcedures\Employer" />
     <Folder Include="PostDeployment" />
     <Folder Include="StoredProcedures\Expense" />
+    <Folder Include="StoredProcedures\User" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\User.sql" />
     <Build Include="Tables\Address.sql" />
-    <Build Include="StoredProcedures\InsertNewUser.sql" />
-    <Build Include="StoredProcedures\Retrieve_User.sql" />
-    <Build Include="StoredProcedures\Procedure1_1.sql" />
-    <Build Include="StoredProcedures\CheckingUsername.sql" />
     <Build Include="Tables\Employer.sql" />
     <Build Include="StoredProcedures\Employer\Employer_Delete.sql" />
     <Build Include="StoredProcedures\Employer\Employer_GetById.sql" />
     <Build Include="StoredProcedures\Employer\Employer_Insert.sql" />
     <Build Include="StoredProcedures\Employer\Employer_Update.sql" />
     <Build Include="Tables\UserRoles.sql" />
-    <Build Include="StoredProcedures\User_GetById.sql" />
     <Build Include="Tables\Expense.sql" />
     <Build Include="StoredProcedures\Expense\Expense_GetById.sql" />
     <Build Include="StoredProcedures\Expense\Expense_Insert.sql" />
     <Build Include="StoredProcedures\Expense\Expense_Update.sql" />
     <Build Include="StoredProcedures\Expense\Expense_Delete.sql" />
     <Build Include="StoredProcedures\Expense\Expense_GetAllByEmployerId.sql" />
+    <Build Include="StoredProcedures\User\CheckingUsername.sql" />
+    <Build Include="StoredProcedures\User\InsertNewUser.sql" />
+    <Build Include="StoredProcedures\User\User_GetById.sql" />
+    <Build Include="StoredProcedures\User\Retrieve_User.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ExpenseTrackerDataBase.refactorlog" />
