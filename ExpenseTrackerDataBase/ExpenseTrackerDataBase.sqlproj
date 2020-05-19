@@ -84,6 +84,9 @@
     <Build Include="StoredProcedures\User\InsertNewUser.sql" />
     <Build Include="StoredProcedures\User\User_GetById.sql" />
     <Build Include="StoredProcedures\User\Retrieve_User.sql" />
+    <Build Include="Statuses.sql" />
+    <Build Include="ExpenseImage.sql" />
+    <Build Include="ExpenseNotes.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ExpenseTrackerDataBase.refactorlog" />

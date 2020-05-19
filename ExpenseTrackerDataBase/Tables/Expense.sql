@@ -9,5 +9,14 @@
     [Amount] DECIMAL(13, 2) NULL, 
     [ReportNumber] VARCHAR(50) NULL, 
     [EmployerId] INT NULL, 
-    CONSTRAINT [FK_Expense_Employer] FOREIGN KEY ([EmployerId]) REFERENCES [Employer]([Id])
+    [UserID] INT NULL,
+    [WithEmployer] INT NULL DEFAULT 0, 
+	[WithUser] INT NULL DEFAULT 1, 
+	[UnderReveiw] INT NULL DEFAULT 0, 
+	[Approved] INT NULL DEFAULT 0, 
+	[Denied] INT NULL DEFAULT 0, 
+    [ImageId] INT NULL,
+    CONSTRAINT [FK_Expense_Employer] FOREIGN KEY ([EmployerId]) REFERENCES [Employer]([Id]),
+    CONSTRAINT [FK_Expense_User] FOREIGN KEY ([UserId]) REFERENCES [User]([UserId]),
+    CONSTRAINT [FK_Expense_Image] FOREIGN KEY ([ImageId]) REFERENCES [ExpenseImage]([Id]),
 )
