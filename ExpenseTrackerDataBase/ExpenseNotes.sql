@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ExpenseNotes]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1, 1),
 	[ExpenseId] INT NULL,
 	[TimeStamp] DATETIME NULL,
 	[UserId] INT NULL, 
