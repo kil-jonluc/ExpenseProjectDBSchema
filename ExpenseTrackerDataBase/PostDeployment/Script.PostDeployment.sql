@@ -11,3 +11,5 @@ Post-Deployment Script Template
 */
 :r ".\UserRolesMerge.merge.data.sql"
 GO
+:r ".\Employers.merge.data.sql"
+GO
