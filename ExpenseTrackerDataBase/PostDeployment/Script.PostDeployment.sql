@@ -13,3 +13,5 @@ Post-Deployment Script Template
 GO
 :r ".\Employers.merge.data.sql"
 GO
+:r ".\Statuses.merge.data.sql"
+GO
