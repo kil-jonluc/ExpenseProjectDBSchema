@@ -9,9 +9,9 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-:r ".\UserRolesMerge.merge.data.sql"
+:r ".\UserRoles.merge.data.sql"
 GO
-:r ".\Employers.merge.data.sql"
+:r ".\Employer.merge.data.sql"
 GO
 :r ".\Statuses.merge.data.sql"
 GO
