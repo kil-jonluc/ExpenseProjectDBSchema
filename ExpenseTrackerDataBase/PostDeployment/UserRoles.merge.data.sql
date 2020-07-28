@@ -1,22 +1,23 @@
-﻿SET IDENTITY_INSERT [dbo].[UserRoles] ON;
-;WITH cte_userRoles([Id], [Role], [Description])
+﻿SET IDENTITY_INSERT [dbo].[Employer] ON;
+;WITH cte_employers([Id], [CompanyName])
 AS (
 	SELECT * FROM (
 		VALUES
-		(0,0,'Employer'),
-		(1,1,'Employee')
-		) c([Id],[Role], [Description]))
-MERGE [dbo].[UserRoles] as T
-USING cte_userRoles as S
+		(0,'Test Company'),
+		(1,'Kilpatrick Company'),
+		(2,'Townsend Company')
+		) c([Id],[CompanyName]))
+MERGE [dbo].[Employer] as T
+USING cte_employers as S
 ON 1=1 AND T.[Id] = S.[Id]
 WHEN MATCHED THEN
 	UPDATE SET
-	[Role] = S.[Role],
-	[Description] = S.[Description]
+	[CompanyName] = S.[CompanyName]
 WHEN NOT MATCHED BY TARGET THEN
-	INSERT([Id], [Role], [Description])
-	VALUES(S.[Id], S.[Role], S.[Description])
+	INSERT([Id], [CompanyName])
+	VALUES(S.[Id], S.[CompanyName])
 WHEN NOT MATCHED BY SOURCE THEN
 	DELETE;
 
-SET IDENTITY_INSERT [dbo].[UserRoles] OFF;
+SET IDENTITY_INSERT [dbo].[Employer] OFF;
+
