@@ -95,7 +95,7 @@
   <ItemGroup>
     <None Include="PublishLocations\LocalExpenseTrackerDataBase.publish.xml" />
     <None Include="local_ExpenseTrackerDataBase.publish.xml" />
-    <None Include="PostDeployment\UserRolesMerge.merge.data.sql" />
+    <None Include="PostDeployment\UserRoles.merge.data.sql" />
     <None Include="PostDeployment\Employers.merge.data.sql" />
     <None Include="PostDeployment\Statuses.merge.data.sql" />
   </ItemGroup>
