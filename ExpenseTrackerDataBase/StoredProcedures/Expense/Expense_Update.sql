@@ -6,7 +6,8 @@
     @Category VARCHAR(50) = NULL, 
     @Merchant VARCHAR(50) = NULL, 
     @Amount DECIMAL(13, 2) = NULL, 
-    @ReportNumber VARCHAR(50) = NULL
+    @ReportNumber VARCHAR(50) = NULL,
+    @Status INT
 AS
 BEGIN
     IF EXISTS (SELECT Id FROM Expense WHERE Id = @Id)
@@ -18,6 +19,7 @@ BEGIN
                 Category = @Category,
                 Merchant = @Merchant,
                 Amount = @Amount,
-                ReportNumber = @ReportNumber
+                ReportNumber = @ReportNumber,
+                [Status] = @Status
         END
 END

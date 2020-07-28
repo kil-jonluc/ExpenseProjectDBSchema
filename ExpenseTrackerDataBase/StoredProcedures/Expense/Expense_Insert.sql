@@ -6,9 +6,11 @@
     @Merchant VARCHAR(50), 
     @Amount DECIMAL(13, 2), 
     @ReportNumber VARCHAR(50),
-    @EmployerId Int
+    @EmployerId INT,
+    @Status INT
+    
 AS
 BEGIN
-    INSERT INTO Expense([Description], Project, [Date], Category, Merchant, Amount, ReportNumber, EmployerId)
-    VALUES(@Description, @Project, @Date, @Category, @Merchant, @Amount, @ReportNumber, @EmployerId)
+    INSERT INTO Expense([Description], Project, [Date], Category, Merchant, Amount, ReportNumber, EmployerId, [Status])
+    VALUES(@Description, @Project, @Date, @Category, @Merchant, @Amount, @ReportNumber, @EmployerId, @Status)
 END
