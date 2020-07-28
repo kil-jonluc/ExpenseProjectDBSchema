@@ -84,11 +84,9 @@
     <Build Include="StoredProcedures\User\InsertNewUser.sql" />
     <Build Include="StoredProcedures\User\User_GetById.sql" />
     <Build Include="StoredProcedures\User\Retrieve_User.sql" />
-
     <Build Include="ExpenseImage.sql" />
     <Build Include="ExpenseNotes.sql" />
     <Build Include="StoredProcedures\Employer\Employer_GetAll.sql" />
-
     <Build Include="Tables\Statuses.sql" />
   </ItemGroup>
   <ItemGroup>
@@ -98,8 +96,8 @@
     <None Include="PublishLocations\LocalExpenseTrackerDataBase.publish.xml" />
     <None Include="local_ExpenseTrackerDataBase.publish.xml" />
     <None Include="PostDeployment\UserRoles.merge.data.sql" />
-    <None Include="PostDeployment\Employers.merge.data.sql" />
     <None Include="PostDeployment\Statuses.merge.data.sql" />
+    <None Include="PostDeployment\Employers.merge.data.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="PostDeployment\Script.PostDeployment.sql" />
