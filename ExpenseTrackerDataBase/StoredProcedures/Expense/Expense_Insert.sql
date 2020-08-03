@@ -1,13 +1,13 @@
 ﻿CREATE PROCEDURE [dbo].[Expense_Insert]
-	@Description VARCHAR(300), 
-    @Project VARCHAR(150), 
-    @Date DATETIME, 
-    @Category VARCHAR(50), 
-    @Merchant VARCHAR(50), 
-    @Amount DECIMAL(13, 2), 
-    @ReportNumber VARCHAR(50),
-    @EmployerId INT,
-    @Status INT
+	@Description    VARCHAR(300) = " ", 
+    @Project        VARCHAR(150) = " ", 
+    @Date           DATETIME, 
+    @Category       VARCHAR(50) = " ", 
+    @Merchant       VARCHAR(50) = " ", 
+    @Amount         DECIMAL(13, 2), 
+    @ReportNumber   VARCHAR(50) = " ",
+    @EmployerId     INT,
+    @Status         INT
     
 AS
 BEGIN
