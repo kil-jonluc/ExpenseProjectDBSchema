@@ -1,13 +1,13 @@
 ﻿CREATE PROCEDURE [dbo].[Expense_Update]
     @Id INT,
-    @Description VARCHAR(300) = NULL, 
-    @Project VARCHAR(150) = NULL, 
-    @Date DATETIME = NULL, 
-    @Category VARCHAR(50) = NULL, 
-    @Merchant VARCHAR(50) = NULL, 
-    @Amount DECIMAL(13, 2) = NULL, 
-    @ReportNumber VARCHAR(50) = NULL,
-    @Status INT
+    @Description    VARCHAR(300) = " ", 
+    @Project        VARCHAR(150) = " ", 
+    @Date           DATETIME, 
+    @Category       VARCHAR(50) = " ", 
+    @Merchant       VARCHAR(50) = " ", 
+    @Amount         DECIMAL(13, 2), 
+    @ReportNumber   VARCHAR(50) = " ",
+    @Status         INT
 AS
 BEGIN
     IF EXISTS (SELECT Id FROM Expense WHERE Id = @Id)
