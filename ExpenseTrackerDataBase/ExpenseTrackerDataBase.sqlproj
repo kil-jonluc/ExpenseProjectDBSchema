@@ -90,6 +90,7 @@
     <Build Include="Tables\Statuses.sql" />
     <Build Include="StoredProcedures\User\User_Update.sql" />
     <Build Include="StoredProcedures\Expense\Expense_GetAllByUserId.sql" />
+    <Build Include="StoredProcedures\Expense\Expense_StatusUpdate.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ExpenseTrackerDataBase.refactorlog" />
